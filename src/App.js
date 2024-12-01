@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import WeatherProvider from './components/WeatherContext';
+import SearchBar from './components/SearchBar';
+import WeatherDisplay from './components/WeatherDisplay';
 
 function App() {
+  const headerStyle = {
+    textAlign: 'center',
+    backgroundColor: '#007BFF',
+    color: 'white',
+    padding: '10px 0',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WeatherProvider>
+      <div>
+        <header style={headerStyle}>
+          <h1>Weather App</h1>
+        </header>
+        <SearchBar />
+        <WeatherDisplay />
+      </div>
+    </WeatherProvider>
   );
 }
 

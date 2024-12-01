@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.loading {
+    font-size: 18px;
+    color: #007BFF;
+}
