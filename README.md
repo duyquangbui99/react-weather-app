@@ -34,6 +34,15 @@ The Simple Weather App allows users to search for the current weather in any cit
 
 5. **Responsive Design**:
    - Ensures the app looks good on various devices and screen sizes.
+---
+
+## **API key**
+- In SearchBar.js file:
+   - Replace the placeholder API key with your own API key:
+  ```bash
+  const API_KEY = 'your_api_key_here';
+
+     
 
 ---
 
